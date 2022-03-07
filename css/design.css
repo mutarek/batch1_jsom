@@ -1,0 +1,94 @@
+body{
+	margin: 30px;
+	background-color: #ff0;
+}
+
+@media(min-width: 780px){
+.header-container{
+	display: flex;
+	align-items: center;
+}
+}
+
+
+
+.header-company{
+	flex: 2;
+}
+
+.header-nav{
+	flex: 2;
+	margin-left: 20px;
+}
+.header-nav a{
+	font-size: 25px;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid green;
+	margin: 5px;
+	border-radius: 5px;
+
+}
+
+.header-nav a:hover{
+	box-shadow: 1px 1px 10px 1px grey;
+	font-size: 30px;
+	color: red;
+	background-color: pink;
+}
+
+.header-nav a:active{
+	box-shadow: 1px 1px 10px 1px grey;
+	font-size: 30px;
+	color: green;
+	background-color: white;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.blogs{
+	height: 500px;
+	width: 440px;
+	padding: 8px;
+	background-color: #CCFFFF;
+	border-radius: 20px;
+	box-shadow: 1px 1px 20px 0px black;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.blogs h1{
+	text-align: center;
+	color: blue;
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin: 10px;
+}
+
+.blogs h1::after,.blogs h1::before{
+	content: "1";
+}
+
+.blogs img{
+	margin: auto;
+	display: block;
+	border-radius: 12px;
+	box-shadow: 2px 4px 20px 5px grey; 
+}
+
+.customh1{
+	width: 200px;
+	height: 40px;
+	font-size: 35px;
+	text-align: center;
+	border: 2px solid white;
+	padding: 25px;
+	display: block;
+	margin: auto;
+	border-radius: 7px;
+	background-color:#CCFFFF; 
+}

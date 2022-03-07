@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/design.css">
+	<script src="data.js"></script>
+</head>
+<body>
+
+
+
+	<div class="header-container">
+
+		<div class="header-company">
+			<h1>Company Name</h1>
+		</div>
+
+		<div align="center" class="header-nav">
+			<a href="">Home</a>
+			<a href="">Blogs</a>
+			<a href="">Shop</a>
+			<a href="">Home</a>
+			<a href="">Blogs</a>
+			<a href="">Shop</a>
+
+		</div>
+		
+	</div>
+
+	<br>
+	<br>
+
+<h1 class="customh1">Our Blogs</h1>
+
+<br>
+<br>
+
+<div class="container">
+
+<script>
+	var a = 0;
+	size = data.length;
+	while (a < size) {
+		document.write(`<div class="blogs">
+	<h2>${data[a]['title']['rendered']}</h2>
+	<img src="${data[a]['jetpack_featured_media_url']}" width="300px" height="200px"> 
+	<p>${data[a]['location']}</p>
+</div>`);
+		a++;
+	}
+</script>
+
+</div>
+
+</body>
+</html>
