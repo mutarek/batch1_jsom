@@ -37,18 +37,11 @@
 
 <div class="container">
 
-<script>
-	var a = 0;
-	size = data.length;
-	while (a < size) {
-		document.write(`<div class="blogs">
+<div class="blogs">
 	<h2>${data[a]['title']['rendered']}</h2>
-	<img src="${data[a]['jetpack_featured_media_url']}" width="300px" height="200px"> 
+	<img src="${data[a]['_embedded']['wp:featuredmedia'][0]['source_url']}" width="300px" height="200px"> 
 	<p>${data[a]['location']}</p>
-</div>`);
-		a++;
-	}
-</script>
+</div>
 
 </div>
 

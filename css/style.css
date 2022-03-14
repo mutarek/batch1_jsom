@@ -6,9 +6,8 @@
     grid-template-areas:
     "h h  h h h h h h h h h h"
     "m m c c c c c c c c c c "
-    "m m f f f f f f f f f f "
+    "f f f f f f f f f f f f "
     ;
-    background-color: black;
     justify-content: center;
     align-items: center;
 }
@@ -16,6 +15,7 @@
 .header{
     grid-column: h;
     background-color: aqua;
+    height: 100px;
 }
 
 .header.logo{
@@ -42,13 +42,24 @@
 
 .content{
     grid-column: c;
-    background-color: bisque;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .footer{
     grid-column: f;
     background-color: brown;
+    height: 100px;
 }
+.waiting{
+    border-radius: 35px;    
+}
+
+.waiting img{
+    width: 100%;
+    height: 40%;
+}
+
 
 
 .container{
@@ -86,3 +97,67 @@
     font-size: 12px;
     text-align: center;
 }
+
+
+
+
+.paidheader{
+    grid-column: h;
+    background-color: aqua;
+    height: 100px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 5px 0px gray;
+}
+
+.paidheader.logo{
+    align: center;
+}
+
+.paidheader a {
+    text-align: center;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .paidfooter{
+    grid-column: f;
+    background-color: brown;
+    height: 100px;
+    border: 2px dashed black;
+}
+
+.tarekbaiya{
+    height: auto;
+    width: auto;
+    border: 2px solid red;
+    padding: 10px;
+}
+.tarekbaiya img{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.customtarekbaiya{
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 2px 4px 10px 0px grey;
+    border-radius: 15px;
+    text-align: center;
+}
+.customtarekbaiya img{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+
+}
+
+
+
