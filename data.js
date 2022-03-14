@@ -5,7 +5,7 @@ let person = {
     loc: [-91212,23232],
     comments: [
         {
-            uid: "dvsvjvksd232",
+            uid: "dvsvjvksdsdd232",
             name: "Aziz",
             content: "Sohomot Vai"
         },
